@@ -16,7 +16,7 @@ This project is created on Python. First, a preprocessing step is done to create
 	- Design your neural networks (layers, hyperparameters, and etc) 
 
 # Example of running	
-asif@ubuntu:~/Downloads/hakathon/mdbn_tcga_brca_tensorflow$ python main_run.py
+"asif@ubuntu:~/Downloads/hakathon/mdbn_tcga_brca_tensorflow$ python main_run.py"
 Welcome to mDBN breast cancer status prediction!
 All training data by TCGA BRCA
 
