@@ -1,4 +1,4 @@
-# Cancer subtype prediction. 
+# Cancer subtype prediction:  
 For three types of predictions, we have provided three deep learning implementation (i.e. Multilyer Perceptron - MLP). We have used ER, HER2 and PGR data with their corresponding inputs. 
 	
   - **SubTypePrediction_DNAMet_ER_with_MLP.scala**: It takes 2 inputs: i) **input_csv_met_type_er.csv** is the data and ii) **label_type_er.csv** is the corresponding label. There are 3 classes to be predicted -i.e. **multinominal classification problem**. 
