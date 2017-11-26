@@ -7,6 +7,11 @@ This project will create a prediction of breast cancer patient status with multi
 
 This project is created on Python. First, a preprocessing step is done to create the dataset for the Neural Network. Then, we try to implement the DBN on [TensorFlow](https://www.tensorflow.org/).
 
+# Installing
+To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here. Once TensorFlow is installed, you can download the source code of this tutorial by running:
+
+git clone https://github.com/tensorflow/nmt/
+
 # Steps to be followed:
 1. Make sure you have Python 2.7 installed on your computer. Make sure you have Tensorflow modules installed on your Python 2.7.
 2. Change "dataset_location_hackathon.py" in folder "Tensorflow". Change variable "MAIN_MDBN_TCGA_BRCA" to the folder of your data.
@@ -15,10 +20,9 @@ This project is created on Python. First, a preprocessing step is done to create
 	- Pick the features you want to use.
 	- Design your neural networks (layers, hyperparameters, and etc) 
 
-# Example of running	
-- asif@ubuntu:~/Downloads/hakathon/mdbn_tcga_brca_tensorflow$ python main_run.py
+# A sample execution	
+- root@ubuntu:~/Downloads/hakathon/DBN_BreastCancer_TensorFlow$ python main_run.py
 
-'
 Welcome to mDBN breast cancer status prediction!
 All training data by TCGA BRCA
 
@@ -49,7 +53,7 @@ Pre-training learning rate [default = 0.01]:
 Training learning rate [default = 0.1]:
 Survival Rate Regression with miRNA Expression (Tensorflow)
 
-[START] Pre-training step:
+- [START] Pre-training step:
 >> Epoch 1 finished     RBM Reconstruction error 11.906680
 >> Epoch 2 finished     RBM Reconstruction error 11.256721
 ....
@@ -57,11 +61,10 @@ Survival Rate Regression with miRNA Expression (Tensorflow)
 >> Epoch 9 finished     RBM Reconstruction error 0.065513
 >> Epoch 10 finished     RBM Reconstruction error 0.024890
 [END] Pre-training step
-[START] Fine tuning step:
+- [START] Fine tuning step:
 >> Epoch 0 finished     ANN training loss 0.018815
 >> Epoch 1 finished     ANN training loss 0.019657
 .....
 >> Epoch 8 finished     ANN training loss 0.018621
 >> Epoch 9 finished     ANN training loss 0.018822
 [END] Fine tuning step	
-'
