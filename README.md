@@ -1,4 +1,4 @@
-# Deep Neural Networks for Analysing Cancer Genomics Data 
+# Deep neural networks for analysing cancer genomics data 
 Oya Beyan, Michael Cochez, Md. Rezaul Karim, Lars Gleim, Nils Lukas and Stefan Decker  
 **Organizers**: Fraunhofer FIT, Germany & RWTH Aachen University, Germany  
 **Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)  
