@@ -11,20 +11,20 @@ The main data source for this hackathon event would be The Cancer Genome Atlas (
 
 ## Problem Definition
 The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to  identify copy numbers associated with cancers.  During the hackathon, the goal will be  to solve three prediction tasks:  
-**Cancer type detection**: Predict the type of cancers using copy number variation from genomics data and deep learning algorithms.
-**Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.
-**Predicting survival rate**: Based on continuous survival rate data, determine the future survival rate.
+**Cancer type detection**: Predict the type of cancers using copy number variation from genomics data and deep learning algorithms.  
+**Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.  
+**Predicting survival rate**: Based on continuous survival rate data, determine the future survival rate.  
 
 ### Task 1: Cancer type detection
-**Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has. 
-**Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 15 different cancer type patients will be used. The input dataset has 569 features and 1 label column (see the data preprocessing document for more detailed information). Since this is al dataset having lots of features, participants should do the feature engineering carefully.  
+**Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
+**Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 15 different cancer type patients will be used. The input dataset has 569 features and 1 label column (see the data preprocessing document for more detailed information). Since this is al dataset having lots of features, participants should do the feature engineering carefully.    
 
-**Model evaluation**: You have to treat this as a multinomial (i.e. multi class) classification problem. Therefore, the solution should have some performance metrics to judge the model’s performance such as accuracy, precision, recall and f1 measure. 
+**Model evaluation**: You have to treat this as a multinomial (i.e. multi class) classification problem. Therefore, the solution should have some performance metrics to judge the model’s performance such as accuracy, precision, recall and f1 measure.   
 
 ### Task 2: Predicting breast cancer subtypes
 **Problem statement**: breast cancer patients can be categorized based on the status of three proteins in their body: estrogen receptor (ER), progesterone receptor (PGR), and HER2/neu. Each protein can be determined as "Positive" (if it exists inside patient's body), "Negative" (if it doesn't exist inside patient's body), or "Indeterminate". In this problem, we will make three predictions, each for each protein to determine their status (positive, negative, or indeterminate) based on their genomic data. 
 
-**Dataset description**: there are three types of genomic that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make train a multimodal deep belief network (MDBN) to make predictions. This part consist of three different predictions:
+**Dataset description**: there are three types of genomic that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make train a multimodal deep belief network (MDBN) to make predictions. This part consist of three different predictions:  
 - Estrogen receptor (ER) status prediction using TCGA genomics data: there are 3 three types of status, which are “Positive”, “Negative”, and “Indeterminate”. 
 - Progesterone receptor (PGR) status prediction: There are 3 types of status -i.e. “Positive”, “Negative”, and “Indeterminate”. 
 - HER2/neu status prediction: There are four types of status, -i.e. “Positive”, “Negative”, “Equivocal”, and “Indeterminate”.
