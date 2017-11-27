@@ -1,15 +1,15 @@
-###  SWAT4LS'2017 Hakathon: Using Deep Neural Networks for Analysing Cancer Genomics Data 
+# SWAT4LS'2017 Hakathon: Using Deep Neural Networks for Analysing Cancer Genomics Data 
 Md. Rezaul Karim, Oya Beyan, Michael Cochez, Lars Gleim, Nils Lukas and Stefan Decker  
 **Organizers**: Fraunhofer FIT, Germany & RWTH Aachen University, Germany  
 **Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)  
 
-## Motivation
+# Motivation
 The aim of the hackathon is to explore application of  deep neural networks on large scale health data sets.  
 Although classical machine learning techniques allow researchers to identify groups (i.e. clusters) of related variables from data, the accuracy and effectiveness of these methods diminish for large and high-dimensional datasets. On the other hand, deep neural network architectures (the core of deep learning) can better exploit large-scale datasets to build complex models. Deep learning algorithms need robust feature engineering since this dataset comes with high-dimensional with large samples size. Feature engineering techniques such as correlation matrix, recursive feature elimination, genetic algorithms, and statistical hypothesis tests can help us to deal with these challenges. 
 
 The main data source for this hackathon event would be The Cancer Genome Atlas (TCGA) project, which is available on the TCGA Research Network: http://cancergenome.nih.gov/. TCGA is a project that started in 2005 to catalog genetic mutations responsible for cancer using genome sequencing and bioinformatics. Currently, TCGA has 39 projects, each corresponding to a certain type of cancer. Each cancer type data are high-dimensional and heterogeneous consisting of masked somatic mutation data, copy number segment masked copy number segments, gene expression quantifications, DNA methylations, miRNA expression, and clinical data. Moreover, the TCGA project collects both clinical data and biospecimen(s) from each patient.
 
-## Problem Definition
+# Problem Definition
 The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to  identify copy numbers associated with cancers.  During the hackathon, the goal will be  to solve three prediction tasks:  
 **Cancer type detection**: Predict the type of cancers using copy number variation from genomics data and deep learning algorithms.
 **Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.
@@ -37,14 +37,14 @@ Model evaluation: You should solve this as a regression task. Therefore, the sol
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
 
-## Machine learning/deep learning algorithms
+# Machine learning/deep learning algorithms
 Selection of the deep learning architecture will be based on the type of the data. Some of the most popular network architectures are Feedforward Neural Networks (FFNN, e.g., Multilayer Perceptron, Deep Belief Networks), Convolutional Neural Network (CNN), Long Short-Term Memory network (LSTM) and Autoencoders. In the literature, CNN is well known as an effective network to act as ‘feature extractors’ for imaging and computer vision, whereas LSTM is a type of powerful Recurrent Neural Networks (RNN) for modelling orderly sequence learning problems. 
 
 In our case, since the available input data are not in either imaging or sequence from (e.g., raw DNA sequences or protein sequences), it has been observed that using CNN or LSTM wouldn’t be a viable solution since lots of additional steps are necessary to make them fit for these datasets. 
 
 Therefore, using FFNN such as Multiplayer Perceptron (MLP) or Deep Belief Network (DBN) with more hidden layers targeted for classification is encouraged. One other positive aspect of using DBN is that we can have a shared representation of features (i.e. multimodal deep belief network - MDBN) and do classification or regression analysis.  Nevertheless, participants are free to use other classical machine learning models such as random forest, Support vector machines (SVM), decision trees, gradient boosted trees, logistic regression, etc. 
  
-## Technologies
+# Technologies
 The following technologies can be used for the given tasks (we will provide some support with them) :
 1. Apache Spark: see more at  https://spark.apache.org/
 2. TensorFlow: see more at https://www.tensorflow.org/
