@@ -50,4 +50,4 @@ The following technologies can be used for the given tasks (we will provide some
 4. KNIME: see more at https://www.knime.com/ 
  
 # How to use this repository
-- Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2018_Hakathon.git
+- Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2017_Hackathon.git
