@@ -1,9 +1,11 @@
 # Deep neural networks for analysing cancer genomics data 
+The aim of the hackathon is to explore application of  deep neural networks on large scale health data sets.
+
 **Authors**: Md. Rezaul Karim, Oya Beyan, Michael Cochez, Lars Gleim, Nils Lukas and Stefan Decker    
 **Organizers**: Fraunhofer FIT, Germany & Informatik 5, RWTH Aachen University, Aachen, Germany   
-**Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)    
+**Contact Person**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)    
 ## Motivation
-The aim of the hackathon is to explore application of  deep neural networks on large scale health data sets. Although classical machine learning techniques allow researchers to identify groups (i.e. clusters) of related variables from data, the accuracy and effectiveness of these methods diminish for large and high-dimensional datasets. On the other hand, deep neural network architectures (the core of deep learning) can better exploit large-scale datasets to build complex models. Deep learning algorithms need robust feature engineering since this dataset comes with high-dimensional with large samples size. Feature engineering techniques such as correlation matrix, recursive feature elimination, genetic algorithms, and statistical hypothesis tests can help us to deal with these challenges. 
+Although classical machine learning techniques allow researchers to identify groups (i.e. clusters) of related variables from data, the accuracy and effectiveness of these methods diminish for large and high-dimensional datasets. On the other hand, deep neural network architectures (the core of deep learning) can better exploit large-scale datasets to build complex models. Deep learning algorithms need robust feature engineering since this dataset comes with high-dimensional with large samples size. Feature engineering techniques such as correlation matrix, recursive feature elimination, genetic algorithms, and statistical hypothesis tests can help us to deal with these challenges. 
 
 The main data source for this hackathon event would be The Cancer Genome Atlas (TCGA) project, which is available on the TCGA Research Network: http://cancergenome.nih.gov/. TCGA is a project that started in 2005 to catalog genetic mutations responsible for cancer using genome sequencing and bioinformatics. Currently, TCGA has 39 projects, each corresponding to a certain type of cancer. Each cancer type data are high-dimensional and heterogeneous consisting of masked somatic mutation data, copy number segment masked copy number segments, gene expression quantifications, DNA methylations, miRNA expression, and clinical data. Moreover, the TCGA project collects both clinical data and biospecimen(s) from each patient.
 
@@ -22,16 +24,19 @@ The scope of hackathon will be  using robust feature selection and construction,
 ### Task 2: Predicting breast cancer subtypes
 **Problem statement**: breast cancer patients can be categorized based on the status of three proteins in their body: estrogen receptor (ER), progesterone receptor (PGR), and HER2/neu. Each protein can be determined as "Positive" (if it exists inside patient's body), "Negative" (if it doesn't exist inside patient's body), or "Indeterminate". In this problem, we will make three predictions, each for each protein to determine their status (positive, negative, or indeterminate) based on their genomic data. 
 
-**Dataset description**: there are three types of genomic that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make train a multimodal deep belief network (MDBN) to make predictions. This part consist of three different predictions, which are Estrogen receptor (ER) status prediction. There are three types of status, which are “Positive”, “Negative”, and “Indeterminate”. Progesterone receptor (PGR) status prediction. There are three types of status, which are “Positive”, “Negative”, and “Indeterminate”. HER2/neu status prediction. There are four types of status, which are “Positive”, “Negative”, “Equivocal”, and “Indeterminate”.
+**Dataset description**: there are three types of genomic that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make train a multimodal deep belief network (MDBN) to make predictions. This part consist of three different predictions:
+- Estrogen receptor (ER) status prediction using TCGA genomics data: there are 3 three types of status, which are “Positive”, “Negative”, and “Indeterminate”. 
+- Progesterone receptor (PGR) status prediction: There are 3 types of status -i.e. “Positive”, “Negative”, and “Indeterminate”. 
+- HER2/neu status prediction: There are four types of status, -i.e. “Positive”, “Negative”, “Equivocal”, and “Indeterminate”.
 
-Model evaluation: You have to treat this as a multinomial (i.e. multi class) classification problem. Therefore, the solution should have the following performance metrics to judge the model’s performance:  Accuracy, Precision, Recall and F1 measure.
+**Model evaluation**: You have to treat this as a multinomial (i.e. multi class) classification problem. Therefore, the solution should have the following performance metrics to judge the model’s performance:  Accuracy, Precision, Recall and F1 measure.
 
 ### Task 3: Predicting breast cancer survival rate
 Problem statement: each patient has a survival rate between 0 and 1 (i.e., continuous), which shows how likely they will survive, with 1 being the likeliest. In this part, we will make a prediction of a patient's survival rate. 
 
-Dataset description: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN).
+**Dataset description**: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN).
 
-Model evaluation: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE)  
+**Model evaluation**: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE)  
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
 
