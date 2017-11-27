@@ -5,7 +5,8 @@
 - The pom.xml file will pull all the dependencies. 
 - Update the project: Select Project => Right click => Maven => Update Project as shown below:
 ![Prject update](Maven.png)
-- Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application 
+- Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
+![Prject update](Maven2.png)
 
 # Special note for Windows users 
 
