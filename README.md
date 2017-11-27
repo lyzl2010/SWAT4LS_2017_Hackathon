@@ -1,4 +1,4 @@
-# SWAT4LS'2017 Hakathon: Using Deep Neural Networks for Analysing Cancer Genomics Data 
+# Using Deep Neural Networks for Analysing Cancer Genomics Data 
 Md. Rezaul Karim, Oya Beyan, Michael Cochez, Lars Gleim, Nils Lukas and Stefan Decker  
 **Organizers**: Fraunhofer FIT, Germany & RWTH Aachen University, Germany  
 **Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)  
