@@ -1,7 +1,7 @@
 # Deep neural networks for analysing cancer genomics data 
-**Authors**: Md. Rezaul Karim, Oya Beyan, Michael Cochez, Lars Gleim, Nils Lukas and Stefan Decker  
-**Organizers**: Fraunhofer FIT, Germany & Informatik 5, RWTH Aachen University, Aachen, Germany 
-**Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)  
+**Authors**: Md. Rezaul Karim, Oya Beyan, Michael Cochez, Lars Gleim, Nils Lukas and Stefan Decker    
+**Organizers**: Fraunhofer FIT, Germany & Informatik 5, RWTH Aachen University, Aachen, Germany   
+**Contact Persons**: Md. Rezaul Karim (Email: rezaul.karim@fit.fraunhofer.de)    
 ## Motivation
 The aim of the hackathon is to explore application of  deep neural networks on large scale health data sets. Although classical machine learning techniques allow researchers to identify groups (i.e. clusters) of related variables from data, the accuracy and effectiveness of these methods diminish for large and high-dimensional datasets. On the other hand, deep neural network architectures (the core of deep learning) can better exploit large-scale datasets to build complex models. Deep learning algorithms need robust feature engineering since this dataset comes with high-dimensional with large samples size. Feature engineering techniques such as correlation matrix, recursive feature elimination, genetic algorithms, and statistical hypothesis tests can help us to deal with these challenges. 
 
