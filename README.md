@@ -49,10 +49,10 @@ Therefore, using FFNN such as Multiplayer Perceptron (MLP) or Deep Belief Networ
  
 ## Technologies
 The following technologies can be used for the given tasks (we will provide some support with them) :
-1. Apache Spark: see more at  https://spark.apache.org/
-2. TensorFlow: see more at https://www.tensorflow.org/
-3. H2O and Sparkling Water: see more at https://www.h2o.ai/
-4. KNIME: see more at https://www.knime.com/ 
+1. **Apache Spark**: see more at  https://spark.apache.org/
+2. **TensorFlow**: see more at https://www.tensorflow.org/
+3. **H2O and Sparkling Water**: see more at https://www.h2o.ai/
+4. **KNIME**: see more at https://www.knime.com/ 
  
 ## How to use this repository
 - Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2017_Hackathon.git
