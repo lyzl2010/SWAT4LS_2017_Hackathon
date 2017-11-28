@@ -17,9 +17,9 @@ The scope of hackathon will be  using robust feature selection and construction,
 
 ### Task 1: Cancer type detection
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
-**Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 14 different cancer type patients will be used. 
+**Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 14 different cancer type patients will be used as shown in below figure. 
 
-
+![Prject update](CancerType.png)
 
 The input dataset has 569 features and 1 label column (see the data preprocessing document for more detailed information). Since this is al dataset having lots of features, participants should do the feature engineering carefully.    
 
