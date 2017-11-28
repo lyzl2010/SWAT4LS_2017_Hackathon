@@ -19,7 +19,7 @@ The scope of hackathon will be  using robust feature selection and construction,
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
 **Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 14 different cancer type patients will be used as shown in below figure. 
 
-![Prject update](CancerType.png)
+![Prject update](CancerType2.png)
 
 The input dataset has 569 features and 1 label column (see the data preprocessing document for more detailed information). Since this is al dataset having lots of features, participants should do the feature engineering carefully.    
 
@@ -40,7 +40,13 @@ Problem statement: each patient has a survival rate between 0 and 1 (i.e., conti
 
 **Dataset description**: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN).
 
-**Model evaluation**: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE)  
+**Model evaluation**: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE).
+
+Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer version and shorter version. For example, some input data might have 64,000 features ans some of then would have 25,000 features. These data are the original preprocessed data in the 'Preprocessed_Data_Longer_version" directory. 
+
+![Prject update](Data.png)
+
+While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled of having about 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. In the hakhathon event if time is a constraints, we would suggest you use the shorter version. 
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
 
