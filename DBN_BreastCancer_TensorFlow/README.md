@@ -1,4 +1,4 @@
-# Deep Belief Network for TCGA BRCA genomic, transcriptomic and clinical data
+# Simple Implementation of Deep Belief Network (DBN) using Genomic, Transcriptomic and Clinical Data
 TCGA BRCA is a catalogue of genetic mutations responsible for breast cancer. The TCGA BRCA project in the [GDC Data Portal](https://portal.gdc.cancer.gov/repository?filters=~%28op~%27and~content~%28~%28op~%27in~content~%28field~%27cases.project.project_id~value~%28~%27TCGA-BRCA%29%29%29%29%29) consists of more than 27,000 files from 1,098 cases (patients). These files are categorized into 13 different data types, 9 of those can be accessed publicly, while the remaining 4 are controlled. This project will only used public-access files.
 
 This project will create a prediction of breast cancer patient status with multimodal Deep Belief Network (mDBN) using their genetic and clinical data. To be specific, there are three predictions that can be done, which are
@@ -8,12 +8,10 @@ This project will create a prediction of breast cancer patient status with multi
 
 This project is created on Python. First, a preprocessing step is done to create the dataset for the Neural Network. Then, we try to implement the DBN on [TensorFlow](https://www.tensorflow.org/).
 
-# Installing
-To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here. Once TensorFlow is installed, you can download the source code of this tutorial by running:
+## Installing
+To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here at https://www.tensorflow.org/install/. 
 
-git clone https://github.com/tensorflow/nmt/
-
-# Steps to be followed:
+## Steps to be followed:
 1. Make sure you have Python 2.7 installed on your computer. Make sure you have Tensorflow modules installed on your Python 2.7.
 2. Change "dataset_location_hackathon.py" in folder "Tensorflow". Change variable "MAIN_MDBN_TCGA_BRCA" to the folder of your data.
 3. Implement the prediction by running main_run.py "python main_run.py".
@@ -21,7 +19,7 @@ git clone https://github.com/tensorflow/nmt/
 	- Pick the features you want to use.
 	- Design your neural networks (layers, hyperparameters, and etc) 
 
-# A sample execution	
+## A sample execution	
 
     asif@ubuntu:~/Downloads/hakathon/mdbn_tcga_brca_tensorflow$ python main_run.py
     Welcome to mDBN breast cancer status prediction!

@@ -71,13 +71,13 @@ def main():
 	######################
 	print("\n\nNeural Network Layers")
 	try:
-		n_layers = input("Number of hidden layers [default = 3]: ")
+		n_layers = int(input("Number of hidden layers [default = 3]: "))
 	except Exception as e:
 		n_layers = 3
 
 	for i in range(n_layers):
 		try:
-			temp = input("Layer " + str(i) + " size [default = 1000]: ")
+			temp = int(input("Layer " + str(i) + " size [default = 1000]: "))
 		except Exception as e:
 			temp = 1000
 
@@ -90,27 +90,27 @@ def main():
 	######################
 	print("\n\nNeural Network Parameters")
 	try:
-		PRETRAIN_EPOCH = input("Pre-training iteration [default = 100]: ")
+		PRETRAIN_EPOCH = int(input("Pre-training iteration [default = 100]: "))
 	except Exception as e:
 		PRETRAIN_EPOCH = 100
 
 	try:
-		TRAIN_EPOCH = input("Training iteration [default = 100]: ")
+		TRAIN_EPOCH = int(input("Training iteration [default = 100]: "))
 	except Exception as e:
 		TRAIN_EPOCH = 100
 
 	try:
-		BATCH_SIZE = input("Batch size [default = 10]: ")
+		BATCH_SIZE = int(input("Batch size [default = 10]: "))
 	except Exception as e:
 		BATCH_SIZE = 10
 
 	try:
-		PRETRAIN_LR = input("Pre-training learning rate [default = 0.01]: ")
+		PRETRAIN_LR = int(input("Pre-training learning rate [default = 0.01]: "))
 	except Exception as e:
 		PRETRAIN_LR = 0.01
 
 	try:
-		TRAIN_LR = input("Training learning rate [default = 0.1]: ")
+		TRAIN_LR = int(input("Training learning rate [default = 0.1]: "))
 	except Exception as e:
 		TRAIN_LR = 0.1
 	
