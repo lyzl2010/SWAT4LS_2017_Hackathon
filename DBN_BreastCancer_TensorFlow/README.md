@@ -9,9 +9,7 @@ This project will create a prediction of breast cancer patient status with multi
 This project is created on Python. First, a preprocessing step is done to create the dataset for the Neural Network. Then, we try to implement the DBN on [TensorFlow](https://www.tensorflow.org/).
 
 # Installing
-To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here. Once TensorFlow is installed, you can download the source code of this tutorial by running:
-
-git clone https://github.com/tensorflow/nmt/
+To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here at https://www.tensorflow.org/install/. 
 
 # Steps to be followed:
 1. Make sure you have Python 2.7 installed on your computer. Make sure you have Tensorflow modules installed on your Python 2.7.
