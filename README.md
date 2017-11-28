@@ -38,7 +38,7 @@ The input dataset has 569 features and 1 label column (see the data preprocessin
 ### Task 3: Predicting breast cancer survival rate
 Problem statement: each patient has a survival rate between 0 and 1 (i.e., continuous), which shows how likely they will survive, with 1 being the likeliest. In this part, we will make a prediction of a patient's survival rate. 
 
-**Dataset description**: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN).
+**Dataset description**: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN). 
 
 **Model evaluation**: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE).
 
@@ -49,6 +49,11 @@ Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer
 While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled of having about 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. In the hakhathon event if time is a constraints, we would suggest you use the shorter version. 
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
+
+# Data download links
+As described aboe, all the preprocessed dataset can be downloaded from below links: 
+- Data for cancer subtype and survival rate prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/jQXd53h6XFq8IYF
+- Data for cancer type prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/wkg87r4zqB62FAE
 
 ## Machine learning/deep learning algorithms
 Selection of the deep learning architecture will be based on the type of the data. Some of the most popular network architectures are Feedforward Neural Networks (FFNN, e.g., Multilayer Perceptron, Deep Belief Networks), Convolutional Neural Network (CNN), Long Short-Term Memory network (LSTM) and Autoencoders. In the literature, CNN is well known as an effective network to act as ‘feature extractors’ for imaging and computer vision, whereas LSTM is a type of powerful Recurrent Neural Networks (RNN) for modelling orderly sequence learning problems. 
