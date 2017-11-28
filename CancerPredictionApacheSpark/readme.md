@@ -9,6 +9,8 @@ These stub-codes works only with Spark 2.x version
 - Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
 ![Prject update](Maven2.png)
 
+Note: make sure that you provide the correct path to input data and label location. 
+
 # Special note for Windows users 
 Spark works on Windows, Mac OS and Linux. But it is designed to be run on the UNIX-like operating system. 
 While using Eclipse or IntelliJ to develop your Spark applications on Windows, you might face an I/O exception error and your application might not compile successfully or may be interrupted. Spark expects that there is a runtime environment for Hadoop on Windows too. If you cannot ensure the runtime environment, an I/O exception saying the following:
