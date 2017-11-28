@@ -4,9 +4,9 @@
 - Import Cancer_Prediction_with_H2O project as a Maven project 
 - The pom.xml file will pull all the dependencies. 
 - Update the project: Select Project => Right click => Maven => Update Project as shown below:
-![Prject update](Maven.png)
+![Prject update](../CancerPredictionApacheSpark/Maven.png)
 - Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
-![Prject update](Maven2.png)
+![Prject update](../CancerPredictionApacheSpark/Maven2.png)
 
 # Special note for Windows users 
 
