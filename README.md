@@ -19,7 +19,7 @@ The scope of hackathon will be  using robust feature selection and construction,
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
 **Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 14 different cancer type patients will be used as shown in below figure. 
 
-![Prject update](CancerType2.png)
+![Prject update](img/CancerType2.png)
 
 The input dataset has 569 features and 1 label column (see the data preprocessing document for more detailed information). Since this is al dataset having lots of features, participants should do the feature engineering carefully.    
 
@@ -44,7 +44,7 @@ Problem statement: each patient has a survival rate between 0 and 1 (i.e., conti
 
 Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer version and shorter version. For example, some input data might have 64,000 features ans some of then would have 25,000 features. These data are the original preprocessed data in the 'Preprocessed_Data_Longer_version" directory. 
 
-![Prject update](Data.png)
+![Prject update](img/Data.png)
 
 While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled of having about 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. In the hakhathon event if time is a constraints, we would suggest you use the shorter version. 
 
