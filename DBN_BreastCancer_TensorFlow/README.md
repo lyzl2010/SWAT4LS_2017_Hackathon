@@ -8,10 +8,10 @@ This project will create a prediction of breast cancer patient status with multi
 
 This project is created on Python. First, a preprocessing step is done to create the dataset for the Neural Network. Then, we try to implement the DBN on [TensorFlow](https://www.tensorflow.org/).
 
-# Installing
+## Installing
 To install this tutorial, you need to have TensorFlow installed on your system. This tutorial requires TensorFlow Nightly. To install TensorFlow, follow the installation instructions here at https://www.tensorflow.org/install/. 
 
-# Steps to be followed:
+## Steps to be followed:
 1. Make sure you have Python 2.7 installed on your computer. Make sure you have Tensorflow modules installed on your Python 2.7.
 2. Change "dataset_location_hackathon.py" in folder "Tensorflow". Change variable "MAIN_MDBN_TCGA_BRCA" to the folder of your data.
 3. Implement the prediction by running main_run.py "python main_run.py".
@@ -19,7 +19,7 @@ To install this tutorial, you need to have TensorFlow installed on your system. 
 	- Pick the features you want to use.
 	- Design your neural networks (layers, hyperparameters, and etc) 
 
-# A sample execution	
+## A sample execution	
 
     asif@ubuntu:~/Downloads/hakathon/mdbn_tcga_brca_tensorflow$ python main_run.py
     Welcome to mDBN breast cancer status prediction!
