@@ -16,7 +16,7 @@ The scope of hackathon will be  using robust feature selection and construction,
 **Predicting survival rate**: Based on continuous survival rate data, determine the future survival rate.  
 
 ## Data processing and preparation
-For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer ![data_processing](Dataset_processing.pdf) here for more details. 
+For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer ![here](Dataset_processing.pdf) for more details. 
 
 ### Task 1: Cancer type detection
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
