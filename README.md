@@ -9,7 +9,7 @@ Although classical machine learning techniques allow researchers to identify gro
 
 The main data source for this hackathon event would be The Cancer Genome Atlas (TCGA) project, which is available on the TCGA Research Network: http://cancergenome.nih.gov/. TCGA is a project that started in 2005 to catalog genetic mutations responsible for cancer using genome sequencing and bioinformatics. Currently, TCGA has 39 projects, each corresponding to a certain type of cancer. Each cancer type data are high-dimensional and heterogeneous consisting of masked somatic mutation data, copy number segment masked copy number segments, gene expression quantifications, DNA methylations, miRNA expression, and clinical data. Moreover, the TCGA project collects both clinical data and biospecimen(s) from each patient.
 
-## Problem Definition
+## Problem definition
 The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to  identify copy numbers associated with cancers.  During the hackathon, the goal will be  to solve three prediction tasks:  
 **Cancer type detection**: Predict the type of cancers using copy number variation from genomics data and deep learning algorithms.  
 **Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.  
@@ -52,6 +52,14 @@ Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer
 While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled of having about 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. In the hakhathon event if time is a constraints, we would suggest you use the shorter version. 
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
+
+# Getting your programming environment ready 
+We have provided some solution for the above metnioed prediction tasks using TensorFlow, Apache Spark, H2O and KNIME. Now to prepare your programming your environment refer below links within this repository:
+
+- For **TensorFlow**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_TensorFlow
+- For **Apache Spark**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/CancerPredictionApacheSpark
+- For **H2O**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Prediction_with_H2O
+- For **KNIME**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_KNIME
 
 # Data download links
 As described aboe, all the preprocessed dataset can be downloaded from below links: 
