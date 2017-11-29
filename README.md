@@ -15,6 +15,9 @@ The scope of hackathon will be  using robust feature selection and construction,
 **Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.  
 **Predicting survival rate**: Based on continuous survival rate data, determine the future survival rate.  
 
+# Data processing and preparation
+For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer here for more details. 
+
 ### Task 1: Cancer type detection
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
 **Dataset description**: for this event, CNV data having both the normal tissue and cancer tissue samples from 14 different cancer type patients will be used as shown in below figure. 
