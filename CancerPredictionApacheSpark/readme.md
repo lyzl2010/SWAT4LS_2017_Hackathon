@@ -5,14 +5,7 @@ These stub-codes works only with Spark 2.x version
 - Import CancerPredictionApacheSpark project as a Maven project 
 - The pom.xml file will pull the following dependencies:
 
-'''
 <dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-core_2.11</artifactId>
@@ -65,7 +58,6 @@ These stub-codes works only with Spark 2.x version
 			<version>1.3.0</version>
 		</dependency>
 </dependencies>
-'''
 
 - Update the project: Select Project => Right click => Maven => Update Project as shown below:
 ![Prject update](Maven.png)
