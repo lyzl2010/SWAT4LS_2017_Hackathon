@@ -31,7 +31,7 @@ object SurvivalPredictionRF {
       .option("delimiter", ",")
       .format("com.databricks.spark.csv")
       .option("header", "false")
-      .load("data/input_mir_sur.csv")
+      .load("data/input_mir_sur.csv") // don't forget to provide the correct path
 
     inputDataDF.printSchema()
 
@@ -40,7 +40,7 @@ object SurvivalPredictionRF {
       .option("delimiter", "\n")
       .format("com.databricks.spark.csv")
       .option("header", "false")
-      .load("data/label_sur.csv")
+      .load("data/label_sur.csv") // don't forget to provide the correct path
 
     val LabelDF = inputLabelDF.withColumnRenamed("_c0", "label")
     inputLabelDF.show()
