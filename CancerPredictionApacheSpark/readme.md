@@ -3,7 +3,70 @@ These stub-codes works only with Spark 2.x version
 - Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2017_Hackathon.git 
 - Then move to CancerPredictionApacheSpark directory
 - Import CancerPredictionApacheSpark project as a Maven project 
-- The pom.xml file will pull all the dependencies. 
+- The pom.xml file will pull the following dependencies:
+
+'''
+<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-sql_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-graphx_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+				<dependency>
+			<groupId>org.vegas-viz</groupId>
+			<artifactId>vegas_2.11</artifactId>
+			<version>0.3.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.vegas-viz</groupId>
+			<artifactId>vegas-spark_2.11</artifactId>
+			<version>0.3.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-yarn_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-network-shuffle_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-streaming-flume_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.databricks</groupId>
+			<artifactId>spark-csv_2.11</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+</dependencies>
+'''
+
 - Update the project: Select Project => Right click => Maven => Update Project as shown below:
 ![Prject update](Maven.png)
 - Change the input data and label path in the Scala code. For example in the "SubTypePrediction_DNAMet_ER_with_MLP.scala" file do the following: 
