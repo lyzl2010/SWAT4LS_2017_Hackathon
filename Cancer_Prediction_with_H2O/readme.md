@@ -1,4 +1,4 @@
-These stub-codes works only with Spark 2.x version
+These stub-codes works only with Spark 2.x and sparkling-water-core_2.11 (version 2.2.0)
 # How to use this code repostory: 
 - Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2017_Hackathon.git 
 - Then move to CancerPredictionApacheSpark directory
@@ -15,13 +15,14 @@ These stub-codes works only with Spark 2.x version
             .appName("Cancer prediction")
              .getOrCreate()             
       import spark.implicits._
+	  val inputDF = spark.read.
+    		option("inferSchema", "true")
+    		.format("com.databricks.spark.csv")
+    		.option("delimiter", "\t")
+    		.option("header", "true")
+    		.load("data/big_data2.csv")  // provide the correct input path.
       
-  val inputDF = spark.read.
-    option("inferSchema", "true")
-    .format("com.databricks.spark.csv")
-    .option("delimiter", "\t")
-    .option("header", "true")
-    .load("data/big_data2.csv")  // provide the correct input path.
+
 
 - Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
 ![Prject update](Maven2.png)
