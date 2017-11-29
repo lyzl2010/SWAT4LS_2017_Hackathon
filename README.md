@@ -53,7 +53,7 @@ While the shorter version (in the 'Preprocessed_Data_Short_version' directory) i
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
 
-# Getting your programming environment ready 
+## Getting your programming environment ready 
 We have provided some solution for the above metnioed prediction tasks using TensorFlow, Apache Spark, H2O and KNIME. Now to prepare your programming your environment refer below links within this repository:
 
 - For **TensorFlow**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_TensorFlow
@@ -61,12 +61,12 @@ We have provided some solution for the above metnioed prediction tasks using Ten
 - For **H2O**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Prediction_with_H2O
 - For **KNIME**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_KNIME
 
-# Data download links
+## Data download links
 As described aboe, all the preprocessed dataset can be downloaded from below links: 
 - Data for cancer subtype and survival rate prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/jQXd53h6XFq8IYF
 - Data for cancer type prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/wkg87r4zqB62FAE
 
-## Machine learning/deep learning algorithms
+## Tips on machine learning/deep learning algorithms
 Selection of the deep learning architecture will be based on the type of the data. Some of the most popular network architectures are Feedforward Neural Networks (FFNN, e.g., Multilayer Perceptron, Deep Belief Networks), Convolutional Neural Network (CNN), Long Short-Term Memory network (LSTM) and Autoencoders. In the literature, CNN is well known as an effective network to act as ‘feature extractors’ for imaging and computer vision, whereas LSTM is a type of powerful Recurrent Neural Networks (RNN) for modelling orderly sequence learning problems. 
 
 In our case, since the available input data are not in either imaging or sequence from (e.g., raw DNA sequences or protein sequences), it has been observed that using CNN or LSTM wouldn’t be a viable solution since lots of additional steps are necessary to make them fit for these datasets. 
