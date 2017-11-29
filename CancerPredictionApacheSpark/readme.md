@@ -6,36 +6,30 @@ These stub-codes works only with Spark 2.x version
 - The pom.xml file will pull all the dependencies. 
 - Update the project: Select Project => Right click => Maven => Update Project as shown below:
 ![Prject update](Maven.png)
-- Change the input data and label path in the Scala code  
+- Change the input data and label path in the Scala code. For example in the "SubTypePrediction_DNAMet_ER_with_MLP.scala" file do the following: 
 
-
-val spark = SparkSession
-      .builder
-      .master("local[4]")
-      .config("spark.sql.warehouse.dir", "data/") // change this location to be used by Spark as Spark SQL warehouse. 
-      .appName("Cancer prediction")
-      .getOrCreate()
+      val spark = SparkSession
+       .builder
+       .master("local[4]")
+            .config("spark.sql.warehouse.dir", "data/") // change this location to be used by Spark as Spark SQL warehouse. 
+            .appName("Cancer prediction")
+             .getOrCreate()             
       import spark.implicits._
 
-    spark.conf.set("spark.sql.crossJoin.enabled", "true")
-    val inputDataDF = spark.read.
-      option("inferSchema", "true")
-      .option("delimiter", ",")
-      .format("com.databricks.spark.csv")
-      .option("header", "false")
-      .load("data/input_csv/type/DNA_Methylation/input_csv_met_type_er.csv")  // provide the correct input path.
+      spark.conf.set("spark.sql.crossJoin.enabled", "true")
+      val inputDataDF = spark.read.
+            option("inferSchema", "true")
+            .option("delimiter", ",")
+            .format("com.databricks.spark.csv")
+            .option("header", "false")
+            .load("data/input_csv/type/DNA_Methylation/input_csv_met_type_er.csv")  // provide the correct input path.
 
-    inputDataDF.printSchema()
-
-    val inputLabelDF = spark.read.
-      option("inferSchema", "true")
-      .option("delimiter", "\n")
-      .format("com.databricks.spark.csv")
-      .option("header", "false")
-.load("data/labels_csv/type/label_type_er.csv")  // provide the correct label path.
-
-
-
+      val inputLabelDF = spark.read.
+            option("inferSchema", "true")
+            .option("delimiter", "\n")
+            .format("com.databricks.spark.csv")
+            .option("header", "false")
+            .load("data/labels_csv/type/label_type_er.csv")  // provide the correct label path.
 
 - Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
 ![Prject update](Maven2.png)
