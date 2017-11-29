@@ -8,6 +8,7 @@ These stub-codes works only with Spark 2.x version
 ![Prject update](Maven.png)
 - Change the input data and label path in the Scala code  
 
+
 val spark = SparkSession
       .builder
       .master("local[4]")
@@ -32,6 +33,9 @@ val spark = SparkSession
       .format("com.databricks.spark.csv")
       .option("header", "false")
 .load("data/labels_csv/type/label_type_er.csv")  // provide the correct label path.
+
+
+
 
 - Then try to run a simple Spark application: Go to a package => Right click => Run as => Scala application as shown below
 ![Prject update](Maven2.png)
