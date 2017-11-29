@@ -33,7 +33,7 @@ object SubTypePrediction_DNAMet_HER2_with_MLP {
       .option("delimiter", ",")
       .format("com.databricks.spark.csv")
       .option("header", "false")
-      .load("data/input_csv/type/DNA_Methylation/input_csv_met_type_her2.csv")
+      .load("data/input_csv/type/DNA_Methylation/input_csv_met_type_her2.csv") // don't forget to provide the correct path
 
     inputDataDF.printSchema()
 
@@ -42,7 +42,7 @@ object SubTypePrediction_DNAMet_HER2_with_MLP {
       .option("delimiter", "\n")
       .format("com.databricks.spark.csv")
       .option("header", "false")
-      .load("data/labels_csv/type/label_type_her2.csv")
+      .load("data/labels_csv/type/label_type_her2.csv")// don't forget to provide the correct path
 
     val LabelDF = inputLabelDF.withColumnRenamed("_c0", "label")
     inputLabelDF.show()
