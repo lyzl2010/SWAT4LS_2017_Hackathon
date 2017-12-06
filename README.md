@@ -64,6 +64,8 @@ As described aboe, all the preprocessed dataset can be downloaded from below lin
 - Data for cancer subtype and survival rate prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/jQXd53h6XFq8IYF
 - Data for cancer type prediction (including both the full version nad the shorter version: https://data.fit.fraunhofer.de/index.php/s/wkg87r4zqB62FAE
 
+If you're asked, provide 'asdf' as password and you're done. 
+
 ## Tips on machine learning/deep learning algorithms
 Selection of the deep learning architecture will be based on the type of the data. Some of the most popular network architectures are Feedforward Neural Networks (FFNN, e.g., Multilayer Perceptron, Deep Belief Networks), Convolutional Neural Network (CNN), Long Short-Term Memory network (LSTM) and Autoencoders. In the literature, CNN is well known as an effective network to act as ‘feature extractors’ for imaging and computer vision, whereas LSTM is a type of powerful Recurrent Neural Networks (RNN) for modelling orderly sequence learning problems. 
 
