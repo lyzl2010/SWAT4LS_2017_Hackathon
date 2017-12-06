@@ -54,10 +54,10 @@ Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is
 ## Getting your programming environment ready 
 We have provided some solution for the above metnioed prediction tasks using TensorFlow, Apache Spark, H2O and KNIME. Now to prepare your programming your environment refer below links within this repository:
 
-- For **TensorFlow**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_TensorFlow
-- For **Apache Spark**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/CancerPredictionApacheSpark
-- For **H2O**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Prediction_with_H2O
-- For **KNIME**: https://github.com/Overholt94/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_KNIME
+- For **TensorFlow**: https://github.com/rezacsedu/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_TensorFlow
+- For **Apache Spark**: https://github.com/rezacsedu/SWAT4LS_2017_Hackathon/tree/master/CancerPredictionApacheSpark
+- For **H2O**: https://github.com/rezacsedu/SWAT4LS_2017_Hackathon/tree/master/Cancer_Prediction_with_H2O
+- For **KNIME**: https://github.com/rezacsedu/SWAT4LS_2017_Hackathon/tree/master/Cancer_Type_Prediction_KNIME
 
 ## Data download links
 As described aboe, all the preprocessed dataset can be downloaded from below links: 
