@@ -11,7 +11,7 @@ Although classical machine learning techniques allow researchers to identify gro
 The main data source for this hackathon event would be The Cancer Genome Atlas (TCGA) project, which is available on the TCGA Research Network: http://cancergenome.nih.gov/. TCGA is a project that started in 2005 to catalog genetic mutations responsible for cancer using genome sequencing and bioinformatics. Currently, TCGA has 39 projects, each corresponding to a certain type of cancer. Each cancer type data are high-dimensional and heterogeneous consisting of masked somatic mutation data, copy number segment masked copy number segments, gene expression quantifications, DNA methylations, miRNA expression, and clinical data. Moreover, the TCGA project collects both clinical data and biospecimen(s) from each patient.
 
 ## Problem definition
-The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to  identify copy numbers associated with cancers.  During the hackathon, the goal will be  to solve three prediction tasks:  
+The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to identify copy numbers associated with cancers. During the hackathon, the goal will be  to solve three prediction tasks:  
 
 ### Task 1: Cancer type detection
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
@@ -43,11 +43,11 @@ Problem statement: each patient has a survival rate between 0 and 1 (i.e., conti
 ## Data processing and preparation
 For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer ![here](Dataset_processing.pdf) for more details. 
 
-Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer version and shorter version. For example, some input data might have 64,000 features ans some of then would have 25,000 features. These data are the original preprocessed data in the 'Preprocessed_Data_Longer_version" directory. 
+Note that for problem 2 and 3, we prepared 2 versions of the dataset -i.e. longer version and shorter version. For example, some file has 64,000 features but some of them can have 25,000 features. These data are the original preprocessed data in the 'Preprocessed_Data_Longer_version" directory. 
 
 ![Prject update](img/Data.png)
 
-While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled of having about 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. In the hakhathon event if time is a constraints, we would suggest you use the shorter version. 
+While the shorter version (in the 'Preprocessed_Data_Short_version' directory) is sampled with 2000 features generated with careful feature selection. However, both dataset have the same file structure as shown in the above figure. Nevertheless, if time is a constraint, we would suggest you use the shorter version. 
 
 Using dimensionality reduction algorithms  (e.g. PCA, SVD, Autoencoders, LDA) is recommended. Additionally, they can use automatic feature selection  (e.g. Chi Square Selection, genetic algorithm) and use the most relevant features for making a prediction. 
 
