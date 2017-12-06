@@ -12,12 +12,6 @@ The main data source for this hackathon event would be The Cancer Genome Atlas (
 
 ## Problem definition
 The scope of hackathon will be  using robust feature selection and construction, deep neural networks and other machine learning algorithms to  identify copy numbers associated with cancers.  During the hackathon, the goal will be  to solve three prediction tasks:  
-- **Cancer type detection**: Predict the type of cancers using copy number variation from genomics data and deep learning algorithms.  
-- **Predicting cancer subtypes**: Based on discrete type of data consisting of estrogen receptor (ER), progesterone receptor (PR), and HER2/neu status, predict cancer subtypes.  
-- **Predicting survival rate**: Based on continuous survival rate data, determine the future survival rate.  
-
-## Data processing and preparation
-For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer ![here](Dataset_processing.pdf) for more details. 
 
 ### Task 1: Cancer type detection
 **Problem statement**: given the copy number variation data of a patient, the task is to identify whether that patient has cancer or not. If yes, then which type of cancer the patient has.   
@@ -45,6 +39,9 @@ Problem statement: each patient has a survival rate between 0 and 1 (i.e., conti
 **Dataset description**: there are three types of genomic data that can be used: DNA methylation data, gene expression data, and miRNA expression data. Participants can use either one of them or combination of them to make the predictive model by training a multimodal deep belief network (MDBN). 
 
 **Model evaluation**: You should solve this as a regression task. Therefore, the solution should have the following performance metrics to judge the model’s performance:   Mean square error (MSE),  Root mean square error (RMSE), R2, Mean average error (MAE).
+
+## Data processing and preparation
+For the event, we have preprocessed four types of data such as **DNA methylation**, **gene expression**, **miRNA expression** and **Copy Number Variations (CNV)** data. The details from raw data collection to cleaning and preprocessing were carried out very careffuly and explicitly for reproducibility. Interested participants can refer ![here](Dataset_processing.pdf) for more details. 
 
 Note that for problem 2 and 3, we provide 2 versions of the dataset -i.e. longer version and shorter version. For example, some input data might have 64,000 features ans some of then would have 25,000 features. These data are the original preprocessed data in the 'Preprocessed_Data_Longer_version" directory. 
 
@@ -82,4 +79,4 @@ The following technologies can be used for the given tasks (we will provide some
 4. **KNIME**: see more at https://www.knime.com/ 
  
 ## How to use this repository
-- Pull this repository using $ git clone https://github.com/Overholt94/SWAT4LS_2017_Hackathon.git
+- Pull this repository using $ git clone https://github.com/rezacsedu/SWAT4LS_2017_Hackathon.git
